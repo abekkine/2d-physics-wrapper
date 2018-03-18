@@ -1,0 +1,5 @@
+*.o
+cmTest
+b2Test
+.*sw*
+
