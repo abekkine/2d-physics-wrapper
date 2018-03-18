@@ -18,6 +18,7 @@ Pentagon::Pentagon(double size)
 : color{1.0, 0.0, 0.0}
 , c(Point(0.0, 0.0))
 , angle(0.0)
+, mass(10.0)
 {
     for (int i=0; i<5; ++i) {
         p[i].x = size * cos(0.4 * (double)i * M_PI);

@@ -11,6 +11,8 @@ int main(int argc, char * argv[]) {
 
     init_world();
 
+    cm_init();
+
     init_gfx(argc, argv, "Chipmunk Test");
 
     init_callbacks();

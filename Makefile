@@ -3,10 +3,10 @@ CXXFLAGS = -g -std=c++11
 all: b2 cm
 
 b2: b2_test.o b2_update.o gfx.o world.o
-	g++ $(CXXFLAGS) -o b2Test b2_test.o b2_update.o gfx.o world.o -lglut -lGL
+	g++ $(CXXFLAGS) -o b2Test b2_test.o b2_update.o gfx.o world.o -lglut -lGL -lBox2D
 
 cm: cm_test.o cm_update.o gfx.o world.o
-	g++ $(CXXFLAGS) -o cmTest cm_test.o cm_update.o gfx.o world.o -lglut -lGL
+	g++ $(CXXFLAGS) -o cmTest cm_test.o cm_update.o gfx.o world.o -lglut -lGL -lchipmunk
 
 b2_test.o:
 	g++ $(CXXFLAGS) -c b2_test.cpp

@@ -15,6 +15,7 @@ struct Ground {
     Point c;
     double angle;
     Point p1, p2;
+    double mass;
 };
 
 struct Pentagon {
@@ -23,6 +24,7 @@ struct Pentagon {
     Point c;
     double angle;
     Point p[5];
+    double mass;
 };
  
 void init_world();

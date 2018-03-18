@@ -11,6 +11,8 @@ int main(int argc, char * argv[]) {
 
     init_world();
 
+    b2_init();
+
     init_gfx(argc, argv, "Box2D Test");
 
     init_callbacks();
