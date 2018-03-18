@@ -28,5 +28,8 @@ struct Pentagon {
 void init_world();
 void render_world();
 
+extern Pentagon *p;
+extern Ground *g;
+
 #endif // WORLD_H_
 
